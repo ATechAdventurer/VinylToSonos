@@ -12,6 +12,7 @@ services:
 
   icecast:
     build: ./icecast
+    privileged: true
     ports:
       - 8080:8000
   
