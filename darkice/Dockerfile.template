@@ -3,7 +3,7 @@ WORKDIR /usr/src
 
 # audioblock: setup alsa bridge to pulseaudio
 ENV PULSE_SERVER tcp:audio:4317
-RUN curl --silent https://raw.githubusercontent.com/balenablocks/audio/master/scripts/alsa-bridge/debian-setup.sh| sh
+RUN curl --silent https://raw.githubusercontent.com/balenablocks/audio/master/scripts/alsa-bridge/debian-setup.sh | sh
 
 # Install dependencies
 RUN install_packages darkice netcat
